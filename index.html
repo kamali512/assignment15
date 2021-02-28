@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="container text-center text-black-50 rounded" id="heading">Assignment 15</h1>
+    </header>
+    <main class="container my-5 text-black-50">
+<!-- Section # 01 - Conditional Statements -->
+        <section class="content">
+            <h2 class="text-center">Conditional Statements</h2>
+            <hr>
+<!-- Start of Row # 01 -->
+            <div class="row my-3">
+
+<!-- Function # 01 Find maximum between two numbers -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Maximum between two numbers</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="firstNum" class="form-control" placeholder="Enter first number">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="secondNum" class="form-control" placeholder="Enter second number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="maxNumber()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert01"></p>
+                </div>
+
+<!-- Function # 02 - Find maximum between three numbers -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Maximum between three numbers</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="segment2-num1" class="form-control" placeholder="Enter first number">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="segment2-num2" class="form-control" placeholder="Enter second number">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="segment2-num3" class="form-control" placeholder="Enter third number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="maxNumberThree()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert02"></p>
+                </div>
+
+<!-- Function # 03 - Check number status (positive, negative, or Zero) -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Check Number Status <br>(+, -, or zero)</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="numberStatus" class="form-control" placeholder="Enter the number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="numberStatusCheck()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert03"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 01 -->
+<!-- Start of Row # 02 -->
+            <div class="row my-3">
+
+<!-- Function # 04 - Check if divisible by 5 and 11 -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Divisible by 5 and 11?</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="divisibleCheck" class="form-control" placeholder="Enter the number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="divisibleBy5And11()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert04"></p>
+                </div>
+
+<!-- Fuction # 05 - Check if the number is even or odd -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Even or Odd?</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="evenOrOdd" class="form-control" placeholder="Enter the number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="evenCheck()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert05"></p>
+                </div>
+
+<!-- Function # 06 - Check if the number is leap year or not -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Leap Year or Not?</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="year" class="form-control" placeholder="Enter the year">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="leapYear()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert06"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 02 -->
+<!-- Start of Row # 03 -->
+            <div class="row my-3">
+
+<!-- Function # 07 - Check if a character is alphabet or not -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Alphabet or Not?</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="character" class="form-control" placeholder="Enter the character">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="alphabetCheck()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert07"></p>
+                </div>
+
+<!-- Function # 08 - Check if the alphabet is vowel or consonant -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Vowel or Consonant?</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="alphabet" class="form-control" placeholder="Enter the alphabet">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="vowelCheck()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert08"></p>
+                </div>
+
+<!-- Function # 09 - Check if the character is a alphabet, digit, or special character -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Alphabet, Digit, or Special Character?</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="charc" class="form-control" placeholder="Enter the character">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="characterCheck()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert09"></p>
+                </div>
+            </div>
+        </section>
+        <br><hr>
+<!-- End of Section # 01 - Conditional Statements -->
+<!-- Start of Section # 02 - String Handling -->
+        <section class="content">
+            <h2 class="text-center">String Handling</h2>
+            <hr>
+<!-- Start of Row # 04 -->
+            <div class="row my-3">
+
+<!-- Function # 10 - Find the length of a string -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Length of a String</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="lengthString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="lengthOfString()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert10"></p>
+                </div>
+
+<!-- Function # 11 - Copy one string to another string -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Copy String to Another String</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="copyString01" class="form-control" placeholder="Enter the first string">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="copyString02" class="form-control" placeholder="Enter the second string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="copyStringToOther()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert11"></p>
+                </div>
+
+<!-- Function # 12 - Concatenate two Strings -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Concatenate Two Strings</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="conString01" class="form-control" placeholder="Enter the first string">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="conString02" class="form-control" placeholder="Enter the second string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="concatenateString()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert12"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 04 -->
+<!-- Start of Row # 05 -->
+            <div class="row my-3">
+
+<!-- Function # 13 - Compare two Strings -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Compare Two Strings</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="comString01" class="form-control" placeholder="Enter the first string">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="comString02" class="form-control" placeholder="Enter the second string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="compareString()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert13"></p>
+                </div>
+
+<!-- Function # 14 - Convert string to uppercase -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Convert String to UpperCcase</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="upperString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="convertToUpperCase()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert14"></p>
+                </div>
+
+<!-- Function # 15 - Convert string to lowercase -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Convert String to LowerCase</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="lowerString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="convertToLowerCase()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert15"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 05 -->
+<!-- Start of Row # 06 -->
+            <div class="row my-3">
+
+<!-- Function # 16 - Convert string to togglecase -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Convert String to ToggleCase</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="toggleString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="convertToToggleCase()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert16"></p>
+                </div>
+
+<!-- Function # 17 -  Find total number of alphabets, digits, and special characters in a string -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Number of Alphabets, Digits, and Special Characters</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="countString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="countCharacterType()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert17"></p>
+                </div>
+
+<!-- Function # 18 - Count total number of Vowels and Consonants -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Count Vowels and Consonants</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="alphabetString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="countAlphabetType()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert18"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 06 -->
+<!-- Start of Row # 07 -->
+            <div class="row my-3">
+
+<!-- Function # 19 - Count total number of words in a string -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Number of words</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="wordsString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="countWords()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert19"></p>
+                </div>
+
+<!-- Function # 20 - Find reverse of the string -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Reverse of a String</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="revString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="reverseString()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert20"></p>
+                </div>
+
+<!-- Function # 21 - Check if the string is palindrome or not -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Check if Palindrome or Not</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="palString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="palindromeCheck()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert21"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 07 -->
+<!-- Start of Row # 08 -->
+            <div class="row my-3">
+
+<!-- Function # 22 - Reverse order of words -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Reverse the words</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="revWords" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="reverseWords()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert22"></p>
+                </div>
+
+<!-- Function # 23 - Find first occurance of a character -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">First Occurance of a Character</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="firstOccuString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="firstOccuCharacter" class="form-control" placeholder="Enter the character">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="firstOccurance()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert23"></p>
+                </div>
+
+<!-- Function # 24 - Find last occurance of a character -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Last Occurance of a Character</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="lastOccuString" class="form-control" placeholder="Enter the string">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastOccuCharacter" class="form-control" placeholder="Enter the character">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="lastOccurance()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert24"></p>
+                </div>
+            </div>
+<!-- End of Row # 08 -->
+        </section>
+        <br><hr>
+<!-- End of Section # 02 - String Handling -->
+<!-- Start of Section # 03 - Array Handling -->
+        <section class="container">
+            <h2 class="text-center">Array Handling</h2>
+            <hr>
+<!-- Start of Row # 09 -->
+            <div class="row my-3">
+
+<!-- Function # 25 - Read and print elements of an array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Read and Print Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="readArray" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="printArray()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert25"></p>
+                </div>
+            
+
+<!-- Function # 26 - Print all negative elements of an array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Print Negative Elements of Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="negArray" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="printNegativeArray()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert26"></p>
+                </div>
+
+
+<!-- Function # 27 - Find Sum of all array elements -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Sum of Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="sumElements" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="sumArray()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert27"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 09 -->
+<!-- Start of Row # 10 -->
+            <div class="row my-3">
+
+<!-- Function # 28 - Find maximum and minimum element in an array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Max and Min Elements of Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="maxElement" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="maxArray()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert28"></p>
+                </div>
+
+<!-- Function # 29 - Find second largest element in an array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Second Largest Element of Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="secLargestElement" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="secondLargest()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert29"></p>
+                </div>
+
+<!-- Function # 30 - Find total number of odd and even numbers -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Total number of Odd and Even Elements </h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="oddAndEven" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="totalOddAndEven()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert30"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 10 -->
+<!-- Start of Row # 11 -->
+            <div class="row my-3">
+
+<!-- Function # 31 - Find total number of negative elements in array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Total number of Negative Elements</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="negElements" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="totalNegativeElements()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert31"></p>
+                </div>
+
+<!-- Function # 32 Copy all elements of an array to another array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Copy Elements of Array to another Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="copyElements1" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="copyElements2" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="copyArrayElements()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert32"></p>
+                </div>
+
+<!-- Function # 33 - Insert an element in an array -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Insert an Element in Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="insertArray" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="insertElement" class="form-control" placeholder="Enter a single word or number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="insertElementInArray()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert33"></p>
+                </div>
+            </div>
+            <hr>
+<!-- End of Row # 11 -->
+<!-- Start of Row # 12 -->
+            <div class="row my-3">
+
+<!-- Function # 34 - Delete an element from array at specified position -->
+                <div class="col-sm mx-2 rounded"></div>
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Delete an Element from Array</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="text" id="deleteArray" class="form-control" placeholder="Enter the array separated by comma(,)">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="deletePosition" class="form-control" placeholder="Enter position of element to delete">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="deleteElement()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert34"></p>
+                </div>
+                <div class="col-sm mx-2 rounded"></div>
+            </div>
+<!-- End or Row # 12 -->
+        </section>
+        <br><hr>
+<!-- End of Section # 03 - Array Handling -->
+<!-- Start of Section # 04 - Math Methods -->
+        <section class="container">
+            <h2 class="text-center">Math Methods</h2>
+            <hr>
+<!-- Start of Row # 13 -->
+            <div class="row my-3">
+
+<!-- Function # 35 - Round the number -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Round the Number</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="roundValue" class="form-control" placeholder="Enter a number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="roundNumber()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert35"></p>
+                </div>
+
+<!-- Function # 36 - Ceil the number -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Ceil the Number</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="ceilValue" class="form-control" placeholder="Enter a number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="ceilNumber()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert36"></p>
+                </div>
+
+<!-- Function # 37 - Floor the number -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Floor the Number</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="floorValue" class="form-control" placeholder="Enter a number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="floorNumber()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert37"></p>
+                </div>
+            </div>
+<!-- End or Row # 13 -->
+        </section>
+        <br><hr>
+<!-- End of Section # 04 - Math Methods -->
+<!-- Start of Section # 05 - Loops -->
+        <section class="container">
+            <h2 class="text-center">Loops</h2>
+            <hr>
+            <!-- Start of Row # 14 -->
+            <div class="row my-3">
+
+<!-- Function # 38 - Print all natural numbers from 1 to n -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Print all Natural Numbers till Entered Number</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="naturalValue" class="form-control" placeholder="Enter a number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="naturalNumber()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert38"></p>
+                </div>
+
+
+<!-- Function # 39 - Print all natural numbers reverse from n to 1 -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Print all Natural Numbers reverse from Entered Number</h4>
+                    <form action="" onsubmit="return false">
+                        <div class="form-group">
+                            <input type="number" id="reverseNaturalValue" class="form-control" placeholder="Enter a number">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="reverseNaturalNumber()" value="Check Result">
+                        </div>
+                    </form>
+                    <p class="none" id="alert39"></p>
+                </div>
+
+<!-- Function # 40 - Print all alphabets from a-z -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Print Alphabets (a-z)</h4>
+                    <form action="" onsubmit="return false">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="printAlphabet()" value="Print Alphabets">
+                        </div>
+                    </form>
+                    <p class="none" id="alert40"></p>
+                </div>
+            </div>
+            <hr>
+            <!-- End or Row # 14 -->
+            <!-- Start of Row # 15 -->
+            <div class="row my-3">
+
+<!-- Function # 41 - Print all even numbers between 1 to 100 -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Print Even Numbers (1-100)</h4>
+                    <form action="" onsubmit="return false">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="evenNumbers()" value="Print Even Numbers">
+                        </div>
+                    </form>
+                    <p class="none" id="alert41"></p>
+                </div>
+
+<!-- Function # 42 - Print all odd numbers between 1 to 100 -->
+                <div class="col-sm mx-2 rounded segment">
+                    <h4 class="text-center">Print Odd Numbers (1-100)</h4>
+                    <form action="" onsubmit="return false">
+                        <br>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-secondary" onclick="oddNumbers()" value="Print Odd Numbers">
+                        </div>
+                    </form>
+                    <p class="none" id="alert42"></p>
+                </div>
+
+
+                <div class="col-sm mx-2 rounded"></div>
+            </div>
+            <!-- End or Row # 15 -->
+        </section>
+<!-- End of Section # 05 - Loops -->
+    </main>
+
+
+<!-- Script Files -->
+    <script src="./script.js"></script>
+</body>
+</html>
